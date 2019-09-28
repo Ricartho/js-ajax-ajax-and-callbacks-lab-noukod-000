@@ -14,7 +14,7 @@
   //   });
   // }
   function searchRepositories(){
-    const url = `https://api.github.com/search/repositories?q=tetris`;
+    const url = `https://api.github.com/search/repositories?q=tetris45;
     $.getJSON(url).done(function(data){
     const repoList = `<ul>${data.map(r=>'<li>'+r.total_count+'</li>').join('')}</ul>`;
     //$('#results').html(repoList)
