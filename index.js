@@ -16,7 +16,7 @@
   function searchRepositories(){
     const url = `https://api.github.com/search/repositories?q=tetris45`;
     $.getJSON(url).done(function(data){
-    const repoList = `<ul>${data.map(r=>'<li>'+r.total_count+'</li>').join('')}</ul>`;
+    //const repoList = `<ul>${data.map(r=>'<li>'+r.total_count+'</li>').join('')}</ul>`;
     //$('#results').html(repoList)
     }).fail(function(error){
       $('#errors').html("<p>I'm sorry, there's been an error. Please try again.</p>");
