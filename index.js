@@ -18,7 +18,7 @@
     $.getJSON(url).done(function(data){
     //const repoList = `<ul>${data.map(r=>'<li>'+r.total_count+'</li>').join('')}</ul>`;
     //$('#results').html(repoList)
-    $('#errors').html("<p>I'm sorry, there's been an error. Please try again1.</p>");
+    $('#results').html("<p>have to work on add jsxhr results on the DOM</p>");
     }).fail(function(error){
       $('#errors').html("<p>I'm sorry, there's been an error. Please try again.</p>");
     })
